@@ -21,27 +21,27 @@ export default function Home() {
                     <Link className='text-green-600 hover:text-primary' href='/cv'>CV</Link>
                 </div>
                 <div className=' flex justify-around w-1/6'>
-                    <a href='/about'>
-                        <CheckIcon />
+                    <a className='w-10 h-10 flex justify-center items-center rounded-full bg-gray-300 hover:bg-amber-300' href='/about'>
+                        <CheckIcon className='w-2/3 h-2/3'/>
                     </a>
-                    <a href='/contact'>
-                        <EnvelopeOpenIcon />
+                    <a className='w-10 h-10 flex justify-center items-center rounded-full bg-gray-300 hover:bg-amber-300' href='/about'>
+                        <GitHubLogoIcon className='w-2/3 h-2/3'/>
                     </a>
-                    <a href='/contact'>
-                        <GitHubLogoIcon />
+                    <a className='w-10 h-10 flex justify-center items-center rounded-full bg-gray-300 hover:bg-amber-300' href='/about'>
+                        <TwitterLogoIcon className='w-2/3 h-2/3'/>
                     </a>
-                    <a href='/contact'>
-                        <TwitterLogoIcon />
+                    <a className='w-10 h-10 flex justify-center items-center rounded-full bg-gray-300 hover:bg-amber-300' href='/about'>
+                        <LinkedInLogoIcon className='w-2/3 h-2/3'/>
                     </a>
-                    <a href='/contact'>
-                        <LinkedInLogoIcon />
+                    <a className='w-10 h-10 flex justify-center items-center rounded-full bg-gray-300 hover:bg-amber-300' href='/about'>
+                        <EnvelopeOpenIcon className='w-2/3 h-2/3'/>
                     </a>
                 </div>
             </nav>
             <div className='z-0 min-w-md overflow-hidden flex flex-col items-center justify-center pt-[20px] relative'>
                 <div className='w-full flex items-center flex-col md:flex-row'>
-                    <div className=' flex items-center justify-center p-20 '>
-                        <Image src='/girl.png' alt='logo' width={200} height={200} className='rounded-sm overflow-hidden' />
+                    <div className=' flex items-center justify-center p-20'>
+                        <Image src='/girl.png' alt='logo' width={200} height={200} className='rounded-sm overflow-hidden hover:animate-spin' />
                     </div>
 
                     <div className=' w-auto p-8 leading-normal'>
