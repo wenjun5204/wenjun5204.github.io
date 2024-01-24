@@ -11,14 +11,14 @@ export default function Home() {
         window.scrollTo(0, 0);
     };
     return (
-        <div className=' relative w-full bg-slate-50 flex min-h-screen flex-col items-center justify-between p-24'>
+        <div className=' relative w-full bg-red-50 flex min-h-screen flex-col items-center justify-between p-10 md:p-24'>
             <nav className='w-full  bg-slate-100 h-[70px] fixed z-[100] top-0 shadow-md flex items-center justify-around '>
                 <div className=' flex justify-around w-1/4'>
-                    <a className='' href='https://liuwenjun.fun'>
+                    <a className='text-green-600 hover:text-primary' href='https://baidu.com'>
                         Wentao Zhu
                     </a>
-                    <Link href='/dashboard'>Home</Link>
-                    <Link href='/cv'>CV</Link>
+                    <Link className='text-green-600 hover:text-primary' href='/dashboard'>Home</Link>
+                    <Link className='text-green-600 hover:text-primary' href='/cv'>CV</Link>
                 </div>
                 <div className=' flex justify-around w-1/6'>
                     <a href='/about'>
@@ -59,12 +59,12 @@ export default function Home() {
                         </p>
                     </div>
                 </div>
-                <div className='w-full px-20'>
+                <div className='w-full px-2 md:px-20'>
                     <p className=' text-lg leading-10 font-bold'>Publications</p>
                     <div className=' text-sm leading-10 font-bold'>2023</div>
 
                     <div className='flex flex-col m-10 gap-4'>
-                        <div className='flex items-center w-full '>
+                        <div className='flex flex-col md:flex-row gap-2  items-center w-full '>
                             <Image src='/celebv-hq.gif' alt='logo' width={300} height={60} className='w-100 h-100' />
                             <Card className='ml-10 w-full'>
                                 <CardHeader>
@@ -81,7 +81,7 @@ export default function Home() {
                                 </CardFooter>
                             </Card>
                         </div>
-                        <div className='flex items-center w-full '>
+                        <div className='flex flex-col md:flex-row gap-2  items-center w-full '>
                             <Image src='/celebv-hq.gif' alt='logo' width={300} height={60} className='w-100 h-100' />
                             <Card className='ml-10 w-full'>
                                 <CardHeader>
@@ -98,7 +98,7 @@ export default function Home() {
                                 </CardFooter>
                             </Card>
                         </div>
-                        <div className='flex items-center w-full '>
+                        <div className='flex flex-col md:flex-row gap-2  items-center w-full '>
                             <Image src='/celebv-hq.gif' alt='logo' width={300} height={60} className='w-100 h-100' />
                             <Card className='ml-10 w-full'>
                                 <CardHeader>
@@ -115,7 +115,7 @@ export default function Home() {
                                 </CardFooter>
                             </Card>
                         </div>
-                        <div className='flex items-center w-full '>
+                        <div className='flex flex-col md:flex-row gap-2  items-center w-full '>
                             <Image src='/celebv-hq.gif' alt='logo' width={300} height={60} className='w-100 h-100' />
                             <Card className='ml-10 w-full'>
                                 <CardHeader>
@@ -132,7 +132,7 @@ export default function Home() {
                                 </CardFooter>
                             </Card>
                         </div>
-                        <div className='flex items-center w-full '>
+                        <div className='flex flex-col md:flex-row gap-2  items-center w-full '>
                             <Image src='/celebv-hq.gif' alt='logo' width={300} height={60} className='w-100 h-100' />
                             <Card className='ml-10 w-full'>
                                 <CardHeader>
@@ -153,7 +153,7 @@ export default function Home() {
                     <div className=' text-sm leading-10 font-bold'>2022</div>
 
                     <div className='flex flex-col m-10 gap-y-4'>
-                        <div className='flex items-center w-full '>
+                        <div className='flex flex-col md:flex-row gap-2 items-center w-full '>
                             <Image src='/gfpose.gif' alt='logo' width={300} height={60} className='w-100 h-100' />
                             <Card className='ml-10 w-full'>
                                 <CardHeader>
@@ -170,7 +170,7 @@ export default function Home() {
                                 </CardFooter>
                             </Card>
                         </div>
-                        <div className='flex items-center w-full '>
+                        <div className='flex flex-col md:flex-row gap-2  items-center w-full'>
                             <Image src='/gfpose.gif' alt='logo' width={300} height={60} className='w-100 h-100' />
                             <Card className='ml-10 w-full'>
                                 <CardHeader>
@@ -192,7 +192,7 @@ export default function Home() {
 
                 {/* <Image src='/gfpose.gif' alt='logo' width={300} height={100} className='w-100 h-100' /> */}
             </div>
-            <div className='w-full px-20'>
+            <div className='w-full px-2 md:px-20'>
                 <h1 className='text-4xl font-bold leading-[80px]'>Teaching</h1>
                 <div className=' flex items-center justify-between'>
                     <a className=' text-blue-400' href='https://arxiv.org/pdf/2307.10894.pdf' target='_blank'>
