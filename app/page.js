@@ -6,6 +6,9 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 // import  from '@radix-ui/react-icons';
 
+import Dashboard from './dashboard/page';
+import GaodeMap from './components/map';
+
 export default function Home() {
     const handleScrollTop = () => {
         window.scrollTo(0, 0);
@@ -38,182 +41,9 @@ export default function Home() {
                     </a>
                 </div>
             </nav>
-            <div className='z-0 min-w-md overflow-hidden flex flex-col items-center justify-center pt-[20px] relative'>
-                <div className='w-full flex items-center flex-col md:flex-row'>
-                    <div className=' flex items-center justify-center p-20'>
-                        <Image src='/girl.png' alt='logo' width={200} height={200} className='rounded-sm overflow-hidden hover:animate-spin' />
-                    </div>
 
-                    <div className=' w-auto p-8 leading-normal'>
-                        <p>
-                            Wentao Zhu is a fourth-year Ph.D. student in Computer Science at &nbsp;
-                            <a href='www.baidu.com' className=' text-blue-300'>
-                                Center on Frontiers of Computing Studies
-                            </a>
-                            , Peking University. He is a member of the Computer Vision and Digital Art group, advised by Prof. Yizhou Wang. Previously, he received Bachelor's degrees in Computer
-                            Science and Economics from Peking University in 2020.
-                            <br />
-                            <br />
-                            His research interests primarily include computer vision and machine learning. Specifically, he is interested in building human-aware AI systems that can perceive,
-                            understand, and interact with human beings.
-                        </p>
-                    </div>
-                </div>
-                <div className='w-full px-2 md:px-20'>
-                    <p className=' text-lg leading-10 font-bold'>Publications</p>
-                    <div className=' text-sm leading-10 font-bold'>2023</div>
-
-                    <div className='flex flex-col m-10 gap-4'>
-                        <div className='flex flex-col md:flex-row gap-2  items-center w-full '>
-                            <Image src='/celebv-hq.gif' alt='logo' width={300} height={60} className='w-100 h-100' />
-                            <Card className='ml-10 w-full'>
-                                <CardHeader>
-                                    <CardTitle>Human Motion Generation: A Survey</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <b>Wentao Zhu</b>*, Xiaoxuan Ma*, Dongwoo Ro*, Hai Ci, Jinlu Zhang, Jiaxin Shi, Feng Gao, Qi Tian, Yizhou Wang <br />
-                                    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>, 2023 <br />
-                                </CardContent>
-                                <CardFooter className=' text-blue-400'>
-                                    <a href='https://arxiv.org/pdf/2307.10894.pdf' target='_blank'>
-                                        Paper
-                                    </a>
-                                </CardFooter>
-                            </Card>
-                        </div>
-                        <div className='flex flex-col md:flex-row gap-2  items-center w-full '>
-                            <Image src='/celebv-hq.gif' alt='logo' width={300} height={60} className='w-100 h-100' />
-                            <Card className='ml-10 w-full'>
-                                <CardHeader>
-                                    <CardTitle>Human Motion Generation: A Survey</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <b>Wentao Zhu</b>*, Xiaoxuan Ma*, Dongwoo Ro*, Hai Ci, Jinlu Zhang, Jiaxin Shi, Feng Gao, Qi Tian, Yizhou Wang <br />
-                                    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>, 2023 <br />
-                                </CardContent>
-                                <CardFooter className=' text-blue-400'>
-                                    <a href='https://arxiv.org/pdf/2307.10894.pdf' target='_blank'>
-                                        Paper
-                                    </a>
-                                </CardFooter>
-                            </Card>
-                        </div>
-                        <div className='flex flex-col md:flex-row gap-2  items-center w-full '>
-                            <Image src='/celebv-hq.gif' alt='logo' width={300} height={60} className='w-100 h-100' />
-                            <Card className='ml-10 w-full'>
-                                <CardHeader>
-                                    <CardTitle>Human Motion Generation: A Survey</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <b>Wentao Zhu</b>*, Xiaoxuan Ma*, Dongwoo Ro*, Hai Ci, Jinlu Zhang, Jiaxin Shi, Feng Gao, Qi Tian, Yizhou Wang <br />
-                                    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>, 2023 <br />
-                                </CardContent>
-                                <CardFooter className=' text-blue-400'>
-                                    <a href='https://arxiv.org/pdf/2307.10894.pdf' target='_blank'>
-                                        Paper
-                                    </a>
-                                </CardFooter>
-                            </Card>
-                        </div>
-                        <div className='flex flex-col md:flex-row gap-2  items-center w-full '>
-                            <Image src='/celebv-hq.gif' alt='logo' width={300} height={60} className='w-100 h-100' />
-                            <Card className='ml-10 w-full'>
-                                <CardHeader>
-                                    <CardTitle>Human Motion Generation: A Survey</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <b>Wentao Zhu</b>*, Xiaoxuan Ma*, Dongwoo Ro*, Hai Ci, Jinlu Zhang, Jiaxin Shi, Feng Gao, Qi Tian, Yizhou Wang <br />
-                                    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>, 2023 <br />
-                                </CardContent>
-                                <CardFooter className=' text-blue-400'>
-                                    <a href='https://arxiv.org/pdf/2307.10894.pdf' target='_blank'>
-                                        Paper
-                                    </a>
-                                </CardFooter>
-                            </Card>
-                        </div>
-                        <div className='flex flex-col md:flex-row gap-2  items-center w-full '>
-                            <Image src='/celebv-hq.gif' alt='logo' width={300} height={60} className='w-100 h-100' />
-                            <Card className='ml-10 w-full'>
-                                <CardHeader>
-                                    <CardTitle>Human Motion Generation: A Survey</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <b>Wentao Zhu</b>*, Xiaoxuan Ma*, Dongwoo Ro*, Hai Ci, Jinlu Zhang, Jiaxin Shi, Feng Gao, Qi Tian, Yizhou Wang <br />
-                                    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>, 2023 <br />
-                                </CardContent>
-                                <CardFooter className=' text-blue-400'>
-                                    <a href='https://arxiv.org/pdf/2307.10894.pdf' target='_blank'>
-                                        Paper
-                                    </a>
-                                </CardFooter>
-                            </Card>
-                        </div>
-                    </div>
-                    <div className=' text-sm leading-10 font-bold'>2022</div>
-
-                    <div className='flex flex-col m-10 gap-y-4'>
-                        <div className='flex flex-col md:flex-row gap-2 items-center w-full '>
-                            <Image src='/gfpose.gif' alt='logo' width={300} height={60} className='w-100 h-100' />
-                            <Card className='ml-10 w-full'>
-                                <CardHeader>
-                                    <CardTitle>Human Motion Generation: A Survey</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <b>Wentao Zhu</b>*, Xiaoxuan Ma*, Dongwoo Ro*, Hai Ci, Jinlu Zhang, Jiaxin Shi, Feng Gao, Qi Tian, Yizhou Wang <br />
-                                    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>, 2023 <br />
-                                </CardContent>
-                                <CardFooter className=' text-blue-400'>
-                                    <a href='https://arxiv.org/pdf/2307.10894.pdf' target='_blank'>
-                                        Paper
-                                    </a>
-                                </CardFooter>
-                            </Card>
-                        </div>
-                        <div className='flex flex-col md:flex-row gap-2  items-center w-full'>
-                            <Image src='/gfpose.gif' alt='logo' width={300} height={60} className='w-100 h-100' />
-                            <Card className='ml-10 w-full'>
-                                <CardHeader>
-                                    <CardTitle>Human Motion Generation: A Survey</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <b>Wentao Zhu</b>*, Xiaoxuan Ma*, Dongwoo Ro*, Hai Ci, Jinlu Zhang, Jiaxin Shi, Feng Gao, Qi Tian, Yizhou Wang <br />
-                                    <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>, 2023 <br />
-                                </CardContent>
-                                <CardFooter className=' text-blue-400'>
-                                    <a href='https://arxiv.org/pdf/2307.10894.pdf' target='_blank'>
-                                        Paper
-                                    </a>
-                                </CardFooter>
-                            </Card>
-                        </div>
-                    </div>
-                </div>
-
-                {/* <Image src='/gfpose.gif' alt='logo' width={300} height={100} className='w-100 h-100' /> */}
-            </div>
-            <div className='w-full px-2 md:px-20'>
-                <h1 className='text-4xl font-bold leading-[80px]'>Teaching</h1>
-                <div className=' flex items-center justify-between'>
-                    <a className=' text-blue-400' href='https://arxiv.org/pdf/2307.10894.pdf' target='_blank'>
-                        Robot Vision and Learning - From a Perspective of Embodied AI
-                    </a>
-                    <span>Fall 2022</span>
-                </div>
-                <div className=' flex items-center justify-between'>
-                    <a className=' text-blue-400' href='https://arxiv.org/pdf/2307.10894.pdf' target='_blank'>
-                        Robot Vision and Learning - From a Perspective of Embodied AI
-                    </a>
-                    <span>Fall 2022</span>
-                </div>
-                <div className=' flex items-center justify-between'>
-                    <a className=' text-blue-400' href='https://arxiv.org/pdf/2307.10894.pdf' target='_blank'>
-                        Robot Vision and Learning - From a Perspective of Embodied AI
-                    </a>
-                    <span>Fall 2022</span>
-                </div>
-            </div>
-
+            <Dashboard/>
+            <GaodeMap />
             <button onClick={handleScrollTop} className='bg-red-500 text-white font-bold py-2 px-4 rounded'>
                 Scroll Top
             </button>

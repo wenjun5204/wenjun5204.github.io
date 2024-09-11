@@ -16,3 +16,6 @@ pnpm dev
 
 通过更改 `app/page.js` 文件，你可以修改页面的渲染方式。 `app/page.js`. 
 
+
+安装shardcn组件
+npx shadcn@latest add button
