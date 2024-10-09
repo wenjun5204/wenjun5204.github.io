@@ -10,10 +10,10 @@ import TodoList from '@/components/cilentCom/todo';
 import Visa from '@/components/cilentCom/visa';
 import Itinerary from '@/components/cilentCom/itinerary';
 
-const More = ({ params, searchParams }) => {
+const More = () => {
     // const result = await postGptRequest({ content: '请根据上述内容给出智能行程单' });
     // console.log(123, result);
-    const destination = String(searchParams?.destination) || '';
+    const destination = 'Italy';
     return (
         <div className="w-full h-auto flex flex-col">
             <HeadGlobe />
