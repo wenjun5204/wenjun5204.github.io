@@ -20,8 +20,24 @@ const GaodeMap = () => {
         const initMap = () => {
             const map = new window.AMap.Map('amap-container', {
                 zoom: 11, // 初始缩放级别
-                center: [116.397428, 39.90923], // 初始中心点坐标
+                center: [116.39, 39.9], // 初始中心点坐标
             });
+
+            var endIcon = new window.AMap.Icon({
+                size: new window.AMap.Size(25, 34),
+                image: '//a.amap.com/jsapi_demos/static/demo-center/icons/dir-marker.png',
+                imageSize: new window.AMap.Size(135, 40),
+                imageOffset: new window.AMap.Pixel(-95, -3)
+            });
+        
+            // 将 icon 传入 marker
+            var endMarker = new window.AMap.Marker({
+                position: new window.AMap.LngLat(116.45,39.9),
+                icon: endIcon,
+                offset: new window.AMap.Pixel(-13, -30)
+            });
+
+            map.add(endMarker);
 
             // 绘制连线
             if (points && points.length > 1) {

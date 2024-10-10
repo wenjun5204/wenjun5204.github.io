@@ -21,7 +21,7 @@ export default function Home() {
                         Wentao Zhu
                     </a>
                     <Link className='text-green-600 hover:text-primary' href='/dashboard'>Home</Link>
-                    <Link className='text-green-600 hover:text-primary' href='/cv'>CV</Link>
+                    <Link className='text-green-600 hover:text-primary' href='/more'>More</Link>
                 </div>
                 <div className=' flex justify-around w-1/6'>
                     <a className='w-10 h-10 flex justify-center items-center rounded-full bg-gray-300 hover:bg-amber-300' href='/about'>
