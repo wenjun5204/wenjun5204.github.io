@@ -7,7 +7,9 @@ export default function HeadGlobe({ tips, step, setStep }) {
         <div className=" fixed top-0 z-50 w-full px-6 ">
             <div className="mt-6 flex items-center w-full h-10 justify-between">
                 <Link href="/">
-                    <div className=" text-2xl font-black bg-clip-text text-transparent bg-gradient-to-r  from-go-g-start to-go-g-end">Go Globe</div>
+                    <div className="text-2xl font-black bg-clip-text text-transparent bg-gradient-to-r  from-go-g-start to-go-g-end">
+                        牛蛙牛蛙
+                    </div>
                 </Link>
 
                 {/* <Link className="text-green-600 hover:text-primary" href="/">
@@ -24,7 +26,7 @@ export default function HeadGlobe({ tips, step, setStep }) {
                         修改提示词
                     </div>
                 )}
-                {step === 3 && <Link href={`/more?destination=${curDestination}`}>More</Link>}
+                {step === 2 && <Link href={`/more?destination=${curDestination}`}>More</Link>}
             </div>
             {step === 1 && <div className="mt-6 font-semibold">Hi！小马，来一起规划旅途吧～</div>}
             {step === 3 && <div className="mt-4 font-semibold">Hi，这是我根据您的每日行程，为你量身 推荐的酒店～</div>}
