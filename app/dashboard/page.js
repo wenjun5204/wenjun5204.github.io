@@ -2,6 +2,7 @@
 import React from 'react';
 import { fetchEventSource } from '@fortaine/fetch-event-source';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default function Page() {
 
@@ -103,6 +104,8 @@ export default function Page() {
     return (
         <div>
             <Button onClick={handleClick}>点击</Button>
+
+            <Link href="/dashboard/hair">发型库</Link>
         </div>
     );
 }
