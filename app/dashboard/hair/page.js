@@ -5,6 +5,14 @@ const images = [
     '/hair/boy2.jpeg',
     '/hair/boy21.jpeg',
     '/hair/boy22.jpeg',
+    '/hair/11.png',
+    '/hair/12.png',
+    '/hair/13.png',
+    '/hair/14.png',
+    '/hair/15.png',
+    '/hair/16.png',
+    '/hair/17.png',
+    '/hair/18.png',
 ];
 
 export default function HairPage() {
